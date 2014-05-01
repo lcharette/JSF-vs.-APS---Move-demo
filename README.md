@@ -1,8 +1,8 @@
 # APE JavaScriptFramework (JSF) vs. ApePubSub (APS)
 
-This Gist was created to show and explain the differences between the Ajax Push Engine (APE) default [Javascript Framework (JSF)](https://github.com/APE-Project/APE_JSF) and Pablo Tejada [Ape Pub Sub (APS)](https://github.com/ptejada/ApePubSub) framework. Both framework are used to control the [APE Server](https://github.com/APE-Project/APE_Server). This document supposed you're already familliar with APE.
+This document was created to show and explain the differences between the Ajax Push Engine (APE) default [Javascript Framework (JSF)](https://github.com/APE-Project/APE_JSF) and Pablo Tejada [Ape Pub Sub (APS)](https://github.com/ptejada/ApePubSub) framework. Both framework are used to control the [APE Server](https://github.com/APE-Project/APE_Server). This document supposed you're already familliar with APE.
 
-For the purpose of this comparation, I used the [Move Demo from the APE Project Website](http://ape-project.org/demos/move/) to compare both frame and serve an example of the same app running on both framework. The "move" demo and is ideal to do so since it is pretty simple. If you are already familiar with both framework, you can skip to the code examples included below. You'll notice how both example use the same HTML, CSS and Javascript helper file. The only thing that changes is the APE related javascript code included in the HTML files.
+For the purpose of this comparation, I used the [Move Demo from the APE Project Website](http://ape-project.org/demos/move/) to compare both frame and serve an example of the same app running on both framework. The "move" demo and is ideal to do so since it is pretty simple. If you are already familiar with both framework, you can skip to the code examples included in this repository. You'll notice how both example use the same HTML, CSS and Javascript helper file. The only thing that changes is the APE related javascript code included in the HTML files.
 
 
 To start things off, I must point out that both framework have the same goal in mind : Provide a way to communicate in real-time with the [APE Server](https://github.com/APE-Project/APE_Server) inside a webpage using Javascript. They both provide the same APIs more or less, they both support websocket and other transport method for legacy broswer and have both proven to be realible on large scale application. What differenciate them is the way they work at their core.
@@ -61,7 +61,7 @@ While both framework acheive the same result, they both have some pros and cons.
 To summarize, the biggest flaws of APE JSF are the use of Mootools, the client vs. core mix-up and it's lack of recent update. While this framework is powerfull, it's implemetation is slightly outdated. 
 
 ## Move demo example
-The move demo included below is a great example on how to use both framework to acehive the same goal. I suggest comparing both file side to side using *FileMerge* or something similar to really apeciate the differences. But lets compare the major difference here.
+The move demo included in this repo is a great example on how to use both framework to acehive the same goal. I suggest comparing both file side to side using *FileMerge* or something similar to really apeciate the differences. But lets compare the major difference here.
 
 The first thing to notice is that APS use a couple less lines to acheive the same result (116 for JSF vs. 98 for APS). You'll also notice how JSF include two scripts while APS only include one. I can't really count this a major diffrence here since the second file for JSF is merely the configs parameters, which could be include in the main file. Nevertheless, I left it like this since the two separate files are the default JSF setup.
 
