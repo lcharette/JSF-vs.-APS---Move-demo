@@ -38,8 +38,8 @@
 				client.user.update('position', {'x': posX, 'y': posY});
 		    });
 		    
-		    //Instantiate APE Client
-            var client = new APS('ape.local:6969');
+		    //Instantiate APE Client (without session support)
+		    var client = new APS('ape.local:6969', null, { session:false });
 			
 			//Set this user properties
 			client.user = {
