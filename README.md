@@ -45,7 +45,7 @@ While both framework acheive the same result, they both have some pros and cons.
 * APS include a robust log and debug function (+)
 * APS can access/publish to a channel using the channel's name (+)
 * APS incldue a way to communicate with the server using PHP (eventPush) (+)
-* APS include a function to update a user propertie. This propertie can be synced across all connected user ()JSF would require a dedicated server side script). (+)
+* APS include a function to update a user property. This propertie can be synced across all connected user (JSF would require a dedicated server side script). (+)
 * APS handling of users and channel is globally simpler (+)
 * APS ways of sending a command/raw/event from a user to a channel is basically simpler. You can specify if the user should receive the event or not (including it subusers if you're using sessions).
 * APS is relatively new and not supported by everyone (-)
@@ -94,7 +94,7 @@ Finnaly, the **createUser** function at the bottom differ only by the way the cu
 ### Personal favorite
 If you read all of this, you may have notice that my personnal preference goes to **ApePubSub (APS)**. I used both framework with my projects since I started using APE four years ago. I find **APS** easier to setup and to with since there's no ambigity between the client and the core. More over, the even driven aspect of APS is easier to understand and to code. APS documentation is helpfull and I like how the channel and user objects works. I found over time that in most cases, APS requires less server-side code to acheive the same result. The move example is a great example of this.
 
-But what make APS my default APS client is the fact that it source code is well documented and written in plain Javascript. The source code is easier to understand this way and make it more eady to maintaint. Futhermore, some unique APIs (For example the *client.update* function are really usefull. Finnally, APS was created and maintained by an active member of the APE Community.
+But what make APS my default APS client is the fact that it source code is well documented and written in plain Javascript. The source code is easier to understand this way and make it more eady to maintaint. Futhermore, some unique APIs (For example the *client.update* function are really usefull). Finnally, APS was created and maintained by an active member of the APE Community.
 
 That being said, and with eveything I wrote here *(Fun fact: it started as a bullet list. I got caught writing more I guess!)*, I truly belive **APS should replace JSF as the defaut APE Server javascript framework****. The simple fact that APS is modern compared to JSF, doesn't use Mootools and is well documented makes it worth a try.
 
